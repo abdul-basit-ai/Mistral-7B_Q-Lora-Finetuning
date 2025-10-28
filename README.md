@@ -1,4 +1,5 @@
 # Mistral-7B_Q-Lora-Finetuning(Quantized-Lora finetuning)
+### Pdf contains the detailed notes
 In this project I finetuned Miistral 7-B instruct model(mistral-7b-instruct-v0.2-bnb-4bit) on ALPHA-cleaned dataset (only on 10% of it). 
 Weight and Biases Report : https://api.wandb.ai/links/basitmal36-university-of-paris-saclay/519cxzlq
 
@@ -9,3 +10,4 @@ The Low-Rank Adaptation (LoRA) is configured with a rank of 16, which determines
 For the training data, a 10% subset of the yahma/alpaca-cleaned instruction-following dataset is used, which helps in generalizing the model's conversational and instruction-adherence abilities. All training data is strictly formatted according to the Alpaca Prompt template (Instruction/Input/Response). Furthermore, the maximum context length is set to a generous2048 tokens (max_seq_length), with Unsloth automatically applying advanced RoPE scaling (xPos) to effectively handle this extended context without positional instability. The training is set to run for just one epoch (num_train_epochs = 1) for rapid demonstration and initial fine-tuning.
 
 The Weight and Biases is used for the Model Metric Visualisation.
+<img width="796" height="835" alt="image" src="https://github.com/user-attachments/assets/6f62fc53-c5e3-4f7e-9ae6-d11f3323bcd7" />
